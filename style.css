@@ -1,0 +1,45 @@
+h1
+{
+	font-style: italic;
+	font-size: 500%;
+	padding-left: 5%;
+	padding-top: 2%;
+	margin: 0;
+}
+
+h2
+{
+	font-size: 300%;
+	font-style: italic;
+	text-align: center;
+}
+
+html
+{
+	background-color: orange;
+}
+
+body
+{
+	background-color: rgba(255, 255, 255, 0.4);
+	padding-left: 3%;
+	padding-right: 3%;
+	font-size: 120%;
+	text-shadow:  0px 0px 1px black;
+}
+
+p.subtitle
+{
+	padding-left: 3%
+}
+
+footer
+{
+	text-align: center;
+	background-color: black;
+	color: white;
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	position: static;
+}
