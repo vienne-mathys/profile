@@ -2,38 +2,175 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>Labo</title>
+	<title>Accueil</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- FONT -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-	<h1>Laboratoire d'un amateur</h1>
-	<p class="subtitle">Ici se trouvent mes travaux mathématiques rédigés. Cliquez sur les liens pour accéder aux documents<br>Mail : mathysvienne@gmail.com<p>
+	<header>
+		<h1>VIENNE Mathys</h1>
+		<nav class="links">
+				<a href="index.html"><button class="nav">Accueil</button></a>
+				<a href="doc.html"><button class="nav">Documents</button></a>
+				<a href="contact.html"><button class="nav">Contact</button></a>
 
-	<h2>Mes documents</h2>
+		</nav>
+	</header>
+	<div class="corps">
 
-	<ul>
-		<li>
-			<a href="files/suites_de_puissances_de_fonctions_affines.pdf" download="files/suites_de_puissances_de_fonctions_affines.pdf">Suites affines</a>
-			<p><em><u>Dernière modification : 7 juin 2023</u></em><br>J'ai voulu étudier le comportement d'une fonction affine mise à la puissance n dans une suite. J'y parle de trivialités sur les polynômes ainsi que de dérivation.</p>
-		</li><br>
-		<li>
-			<a href="files/kieme_derivative.pdf" download="files/k-ieme_derivee.pdf">k-ième dérivée</a>
-			<p><em><u>Dernière modification : 24 juin 2023</u></em><br>C'est un complément de celui sur les suite de puissances de fonctions affines. J'y expose une formule générale pour calculer une dérivée de n'importe quel ordre pour un terme d'une de ces suites.</p>
-		</li><br>
-		<li>
-			<a href="files/Rapport_de_Recherche_v3.pdf" download="files/complexes_et_fractale.pdf">Rapport de Recherche sur la base complexe et figure fractale</a>
-			<p><em><u>Dernière modification : 28 mars 2023</u></em><br>La base numérique (i-1) et son système binaire auraient-ils un intérêt pour l'informatique moderne ? C'est la question à laquelle je souhaitais répondre. Il se trouve cependant que cette base est liée à une fractale. J'ai donc cherché à la tracer informatiquement de la manière la plus efficace possible.</p>
-		</li><br>
-		<li>
-			<a href="files/proba_pokemon.pdf" download="files/probabilite_capture.pdf">Probabilité de capture dans pokémon</a>
-			<p><em><u>Dernière modification : 12 juin 2023</u></em><br>Pourquoi ne rentrent-ils pas ? Les jeux pokémons sont des jeux remplis de probabilités. La capture des créatures est un élément central des jeu et plus généralement de l'univers fictif. En cela, nous allons creuser et chercher les mécanismes qui se cachent derrière afin de mieux comprendre ce qu'il se passe lorsque nous jouons.</p>
-		</li>
-	</ul>
+		<h2 id="top">Accueil</h2>
+		<p class="subtitle">Sur ce site, vous trouverez l'ensemble de mes écrits liés aux sciences.</br>Je suis un jeune étudiant spécialisé dans les mathématiques fondamentales et l'informatique.</p>
 
-	<h2>Qui suis-je ?</h2>
-	<p>Je suis VIENNE Mathys. J'ai toujours eu un attrait pour les mathématiques dans mon parcours scolaire. Je suis jeune et encore débutant, je n'ai pas la prétention de découvrir quoi que ce soit. Il est évident que ces documents ne contiennent pas d'éléments révolutionnaires mais au contraire probablement des fautes, des oublis et des erreurs. Ces documents sont némanmoins ma fierté en tant que jeune passionné, et j'espère qu'il sauront divertir quelques personnes le temps d'une lecture.</p>
-</body>
+		<div class="maths">
+			<math display="block" class="tml-display" style="display:block math;">
+			  <mstyle scriptlevel="0" displaystyle="true">
+			    <msub>
+			      <mi>p</mi>
+			      <mi>n</mi>
+			    </msub>
+			    <mo>=</mo>
+			    <mn>1</mn>
+			    <mo>+</mo>
+			    <mrow>
+			      <munderover>
+			        <mo stretchy="true">∑</mo>
+			        <mrow>
+			          <mi>i</mi>
+			          <mo>=</mo>
+			          <mn>1</mn>
+			        </mrow>
+			        <msup>
+			          <mn>2</mn>
+			          <mi>n</mi>
+			        </msup>
+			      </munderover>
+			    </mrow>
+			    <mrow>
+			      <mo fence="true" form="prefix">⌊</mo>
+			      <msup>
+			        <mrow>
+			          <mo fence="true" form="prefix">(</mo>
+			          <mfrac>
+			            <mi>n</mi>
+			            <mrow>
+			              <msubsup>
+			                <mo stretchy="true">∑</mo>
+			                <mrow>
+			                  <mi>j</mi>
+			                  <mo>=</mo>
+			                  <mn>1</mn>
+			                </mrow>
+			                <mi>i</mi>
+			              </msubsup>
+			              <mrow>
+			                <mo fence="true" form="prefix">⌊</mo>
+			                <msup>
+			                  <mrow>
+			                    <mo fence="true" form="prefix">(</mo>
+			                    <mrow>
+			                      <mi>cos</mi>
+			                      <mo>⁡</mo>
+			                      <mspace width="0.1667em"></mspace>
+			                    </mrow>
+			                    <mfrac>
+			                      <mrow>
+			                        <mo form="prefix" stretchy="false" lspace="0em" rspace="0em">(</mo>
+			                        <mi>j</mi>
+			                        <mo>−</mo>
+			                        <mn>1</mn>
+			                        <mo form="postfix" stretchy="false">)</mo>
+			                        <mo form="postfix" stretchy="false">!</mo>
+			                        <mo>+</mo>
+			                        <mn>1</mn>
+			                      </mrow>
+			                      <mi>j</mi>
+			                    </mfrac>
+			                    <mi>π</mi>
+			                    <mo fence="true" form="postfix">)</mo>
+			                  </mrow>
+			                  <mn>2</mn>
+			                </msup>
+			                <mo fence="true" form="postfix">⌋</mo>
+			              </mrow>
+			            </mrow>
+			          </mfrac>
+			          <mo fence="true" form="postfix">)</mo>
+			        </mrow>
+			        <mrow>
+			          <mn>1</mn>
+			          <mi>/</mi>
+			          <mi>n</mi>
+			        </mrow>
+			      </msup>
+			      <mo fence="true" form="postfix">⌋</mo>
+			    </mrow>
+			  </mstyle>
+			</math>
+			<center>
+				<p class="legende">Tirée de "On formulae for the nth prime number", C.P. Willans, 1964</p>
+			</center>
+		</div>
+		
+
+		<h3 id="section1">VIENNE Mathys, c'est mon nom !</h3>
+		<p>J'ai toujours eu un attrait pour les mathématiques dans mon parcours scolaire. Je suis jeune et encore débutant, mais de nombreux sujets attirent mon attention. Je suis actuellement une double licence en mathématiques et en informatique afin de perfectionner mes comptétences dans ces deux domaines qui me passionnent. En dehors des cours, je suis très intéréssé par l'algèbre, l'arithmétique et la théorie des nombres. Spécifiquement, je suis très intéréssé par la notion de système de numération. Pour ce qui est de l'informatique, j'apprécie le développement en général, avec un fort intérêt pour des langages typés objets tels que Java ou C#. Mes quelques maigres connaissances me motivent souvent à écrire et expérimenter moi-même de nombreuses choses que j'apprécie souvent poser par écrit afin de pouvoir le réutiliser plus tard.</p>
+	</div>
+
+
+	<div class="timeline">
+ 		<div class="container left">
+    		<div class="content">
+     			<h4>Juillet 2023 : Fini le lycée !</h4>
+      			<ul>
+			      	<li>Obtention d'un baccalauréat général, spé. Mathématiques/NSI (SES abandonnée) avec mention Européenne Anglais
+			      	</li><br>
+      				<li>Obtention d'un Cambridge English Certificate niveau C1</li>
+      			</ul>
+    		</div>
+  		</div>
+		<div class="container right">
+		    <div class="content">
+		      <h4>Septembre 2023 : Entrer dans le grand bain</h4>
+		      <p>Entrée en Double Licence Math. Inf. à l'Université Sorbonne Paris Nord</p>
+		    </div>
+		  </div>
+		<div class="container left">
+		    <div class="content">
+		      <h4>2024 : Garder le rythme</h4>
+		      <p>Après validation de la première année de Double Licence, entrée en 2e année. Toujours aussi motivé !</p>
+		    </div>
+		</div>
+		<div class="container right">
+		    <div class="content">
+		      <h4>Et Aujourd'hui ?</h4>
+		      <p>J'entame mon second semestre de seconde année et je donne tout mon possible pour concrétiser mes projets d'avenir !</p>
+		    </div>
+		</div>
+
+	</div>
+  
+  <div class="displayprog">
+  	<img width="100px" height="110px" src="img/C_Logo.png" alt="Logo C">
+  	<img width="100px" height="110px" src="img/Logo_C_sharp.svg.png" alt="Logo C#">
+  	<img width="100px" height="110px" src="img/Python-logo-notext.svg.png" alt="Logo Python">
+  	<img width="255" height="110px" src="img/Gnu-bash-logo.svg.png" alt="Logo Bash">
+  	<img width="100px" height="110px" src="img/Java_Logo.svg" alt="Logo Java">
+  	<img width="100px" height="110px" src="img/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML5">
+  	<img width="100px" height="110px" src="img/CSS3_logo_and_wordmark.svg.png" alt="Logo CSS3">
+
+  </div>
+<div style="flex-grow: 1;"></div>
 <footer>
-	<p>Documents et site faits par Mathys VIENNE, 2023.</p>
+	Documents et site crées par Mathys VIENNE, 2025.
 </footer>
+</body>
 </html>
